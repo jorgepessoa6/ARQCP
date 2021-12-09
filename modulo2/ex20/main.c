@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include "asm.h"
+
+int num;
+
+// 1, if num is even and negative;
+// 2, if num is odd and negative.
+// 3, if num is even and positive;
+// 4, if num is odd and positive;
+
+int main(void) {
+
+	num=-12;
+	printf("Number is %d\n", num);
+	int result = check_num();
+	printf("checkEvenOddPositiveNegative() = %d\n", result);
+	num=-13;
+	printf("Number is %d\n", num);
+	result = check_num();
+	printf("checkEvenOddPositiveNegative() = %d\n", result);
+	num=8;
+	printf("Number is %d\n", num);
+	result = check_num();
+	printf("checkEvenOddPositiveNegative() = %d\n", result);
+	num=5;
+	printf("Number is %d\n", num);
+	result = check_num();
+	printf("checkEvenOddPositiveNegative() = %d\n", result);
+
+
+	return 0;
+
+}

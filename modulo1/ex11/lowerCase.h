@@ -1,0 +1,1 @@
+int lowerCase(char *str);
